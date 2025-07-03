@@ -45,12 +45,11 @@ export default function EditarEliminarScreen() {
     function Confirmar() {
         Alert.alert(
             'Confirmar eliminación',
-            `¿Seguro que deseas eliminar el producto con ID ${id}?`,
+            `¿Seguro que deseas eliminar el producto con ID?`,
             [
-                { text: 'Cancelar', style: 'cancel' },
+                { text: 'Cancelar' },
                 {
                     text: 'Eliminar',
-                    style: 'destructive',
                     onPress: () => eliminar(),
                 },
             ]
