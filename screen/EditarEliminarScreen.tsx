@@ -11,11 +11,11 @@ export default function EditarEliminarScreen() {
 
     async function editarProducto() {
         if (
-            id.trim() ===null ||
-            nombre.trim() ===null ||
-            categoria.trim() ===null ||
-            precio.trim() ===null ||
-            stock.trim() ===null
+            id.trim() === "" ||
+            nombre.trim() === "" ||
+            categoria.trim() === "" ||
+            precio.trim() === "" ||
+            stock.trim() === ""
         ) {
             Alert.alert('Error', 'Todos los campos son obligatorios');
             return;
